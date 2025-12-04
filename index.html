@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevJunior Academy - Plateforme d'apprentissage en informatique et développement web pour développeurs juniors">
+    <title>DevJunior Academy - Apprenez le développement web et l'informatique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🚀</span>
+                DevJunior Academy
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#courses">Cours</a></li>
+                <li><a href="#features">Avantages</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-button nav-cta">Commencer</button>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Maîtrisez le <span class="highlight">Développement Web</span> et l'<span class="highlight">Informatique</span></h1>
+                <p class="hero-subtitle">Une plateforme d'apprentissage conçue pour les développeurs juniors qui souhaitent progresser et acquérir de nouvelles compétences en computer science.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="cta-button primary">Découvrir les cours</a>
+                    <a href="#about" class="cta-button secondary">En savoir plus</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Cours disponibles</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Étudiants actifs</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">skills</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JS"</span>],
+  <span class="property">passion</span>: <span class="boolean">true</span>,
+  <span class="property">learning</span>: <span class="string">"always"</span>
+};
+
+<span class="keyword">function</span> <span class="function">grow</span>() {
+  <span class="keyword">return</span> <span class="variable">developer</span>.<span class="property">skills</span>
+    .<span class="function">map</span>(<span class="variable">skill</span> => 
+      <span class="variable">skill</span> + <span class="string">" Expert"</span>
+    );
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">À propos</span>
+                <h2>Pourquoi choisir DevJunior Academy ?</h2>
+                <p>Notre mission est de rendre l'apprentissage du développement web et de l'informatique accessible à tous les développeurs juniors.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">📚</div>
+                    <h3>Contenu de qualité</h3>
+                    <p>Des cours conçus par des experts de l'industrie, mis à jour régulièrement pour suivre les dernières tendances technologiques.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Apprentissage pratique</h3>
+                    <p>Apprenez en construisant de vrais projets. Chaque cours inclut des exercices pratiques et des projets concrets.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">👥</div>
+                    <h3>Communauté active</h3>
+                    <p>Rejoignez une communauté de développeurs passionnés. Partagez, apprenez et évoluez ensemble.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🏆</div>
+                    <h3>Certifications</h3>
+                    <p>Obtenez des certifications reconnues pour valoriser vos nouvelles compétences auprès des employeurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos cours</span>
+                <h2>Explorez notre catalogue de formations</h2>
+                <p>Des parcours structurés pour vous accompagner du niveau débutant au niveau avancé.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image html-css">
+                        <span class="course-badge">Populaire</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Débutant</span>
+                        </div>
+                        <h3>HTML & CSS Fondamentaux</h3>
+                        <p>Maîtrisez les bases du développement web avec HTML5 et CSS3. Créez des sites web modernes et responsifs.</p>
+                        <div class="course-meta">
+                            <span>📖 24 leçons</span>
+                            <span>⏱️ 12 heures</span>
+                        </div>
+                        <a href="#" class="course-link">Commencer →</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image javascript">
+                        <span class="course-badge new">Nouveau</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Intermédiaire</span>
+                        </div>
+                        <h3>JavaScript Moderne</h3>
+                        <p>Apprenez JavaScript ES6+ et créez des applications web interactives et dynamiques.</p>
+                        <div class="course-meta">
+                            <span>📖 36 leçons</span>
+                            <span>⏱️ 20 heures</span>
+                        </div>
+                        <a href="#" class="course-link">Commencer →</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image react"></div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Framework</span>
+                            <span class="tag">Intermédiaire</span>
+                        </div>
+                        <h3>React.js de A à Z</h3>
+                        <p>Développez des interfaces utilisateur modernes avec React, le framework le plus populaire.</p>
+                        <div class="course-meta">
+                            <span>📖 42 leçons</span>
+                            <span>⏱️ 25 heures</span>
+                        </div>
+                        <a href="#" class="course-link">Commencer →</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image nodejs"></div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Backend</span>
+                            <span class="tag">Avancé</span>
+                        </div>
+                        <h3>Node.js & APIs REST</h3>
+                        <p>Créez des serveurs web et des APIs performantes avec Node.js et Express.</p>
+                        <div class="course-meta">
+                            <span>📖 30 leçons</span>
+                            <span>⏱️ 18 heures</span>
+                        </div>
+                        <a href="#" class="course-link">Commencer →</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image algorithms"></div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Computer Science</span>
+                            <span class="tag">Intermédiaire</span>
+                        </div>
+                        <h3>Algorithmes & Structures de données</h3>
+                        <p>Maîtrisez les fondamentaux de l'informatique pour réussir vos entretiens techniques.</p>
+                        <div class="course-meta">
+                            <span>📖 48 leçons</span>
+                            <span>⏱️ 30 heures</span>
+                        </div>
+                        <a href="#" class="course-link">Commencer →</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image git"></div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Outils</span>
+                            <span class="tag">Débutant</span>
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <p>Apprenez à gérer vos projets avec Git et collaborez efficacement avec GitHub.</p>
+                        <div class="course-meta">
+                            <span>📖 18 leçons</span>
+                            <span>⏱️ 8 heures</span>
+                        </div>
+                        <a href="#" class="course-link">Commencer →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Avantages</span>
+                <h2>Ce qui nous rend uniques</h2>
+                <p>Une expérience d'apprentissage pensée pour votre réussite.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">💻</div>
+                    <div class="feature-content">
+                        <h3>Environnement de code intégré</h3>
+                        <p>Codez directement dans votre navigateur avec notre éditeur de code en ligne.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-content">
+                        <h3>Suivi de progression</h3>
+                        <p>Visualisez votre progression et identifiez vos points forts et axes d'amélioration.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎥</div>
+                    <div class="feature-content">
+                        <h3>Vidéos HD</h3>
+                        <p>Des tutoriels vidéo haute définition avec sous-titres en français.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <div class="feature-content">
+                        <h3>Accès mobile</h3>
+                        <p>Apprenez où vous voulez, quand vous voulez avec notre application mobile.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <div class="feature-content">
+                        <h3>Mises à jour régulières</h3>
+                        <p>Contenu actualisé constamment pour rester à la pointe de la technologie.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💬</div>
+                    <div class="feature-content">
+                        <h3>Support 24/7</h3>
+                        <p>Une équipe de mentors disponible pour répondre à toutes vos questions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Témoignages</span>
+                <h2>Ce que disent nos étudiants</h2>
+                <p>Découvrez les retours de notre communauté de développeurs.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Grâce à DevJunior Academy, j'ai pu décrocher mon premier emploi de développeur front-end en seulement 6 mois. Les cours sont clairs et les projets pratiques m'ont vraiment préparé au monde professionnel."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ML</div>
+                        <div class="author-info">
+                            <h4>Marie Leroy</h4>
+                            <span>Développeuse Front-end</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Le cours sur les algorithmes m'a permis de réussir mes entretiens techniques chez plusieurs grandes entreprises tech. Je recommande vivement cette plateforme à tous les développeurs juniors."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TD</div>
+                        <div class="author-info">
+                            <h4>Thomas Dupont</h4>
+                            <span>Ingénieur Logiciel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"La communauté est incroyable ! J'ai trouvé des mentors et des amis qui m'ont aidé à progresser rapidement. Les exercices pratiques sont vraiment ce qui fait la différence."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SB</div>
+                        <div class="author-info">
+                            <h4>Sophie Bernard</h4>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à commencer votre parcours ?</h2>
+                <p>Rejoignez plus de 10 000 développeurs qui ont choisi DevJunior Academy pour développer leurs compétences.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-button primary large">Commencer gratuitement</a>
+                    <a href="#" class="cta-button secondary large">Voir les tarifs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Une question ? Contactez-nous</h2>
+                <p>Notre équipe est là pour vous aider dans votre parcours d'apprentissage.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@devjunior-academy.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>123 Rue de l'Innovation<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Discord</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="courses">Question sur les cours</option>
+                            <option value="technical">Support technique</option>
+                            <option value="billing">Facturation</option>
+                            <option value="partnership">Partenariat</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🚀</span>
+                        DevJunior Academy
+                    </a>
+                    <p>La plateforme d'apprentissage pour les développeurs juniors qui veulent maîtriser le développement web et l'informatique.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Plateforme</h4>
+                    <ul>
+                        <li><a href="#">Tous les cours</a></li>
+                        <li><a href="#">Parcours</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutoriels gratuits</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Presse</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DevJunior Academy. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
