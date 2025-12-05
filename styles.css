@@ -250,6 +250,13 @@ a {
 .hero-image {
     display: flex;
     justify-content: center;
+    border-radius: 16px;
+    background-image: url("./front_page_code_img.png");
+    background-size: cover; /* ou contain, selon le résultat souhaité */
+    /* background-position: cover; */
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;   
 }
 
 .code-window {
